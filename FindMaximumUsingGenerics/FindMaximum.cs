@@ -9,7 +9,7 @@ namespace FindMaximumUsingGenerics
 {
     internal class FindMaximum
     {
-        public int first, second, third;
+       public int first, second, third;
       public static void FindMaxValue(int first,int second,int third)
       {
             if(first.CompareTo(second) >=0 && first.CompareTo(third) >= 0)
