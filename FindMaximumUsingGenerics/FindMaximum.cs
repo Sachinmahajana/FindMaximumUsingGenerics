@@ -9,20 +9,23 @@ namespace FindMaximumUsingGenerics
 {
     internal class FindMaximum
     {
-       public int first, second, third;
-      public static void FindMaxValue(int first,int second,int third)
+      
+      public static float FindDoubleMaxValue(float first,float second,float third)
       {
             if(first.CompareTo(second) >=0 && first.CompareTo(third) >= 0)
             {
-                Console.WriteLine("{0} is greater", first);
+                //Console.WriteLine("{0} is greater", first);
+                return first;
             }
             else if(second.CompareTo(first) >=0 && second.CompareTo(third) >= 0)
             {
-                Console.WriteLine("{0} is greater", second);
+                //Console.WriteLine("{0} is greater", second);
+                return second;
             }
             else
             {
-                Console.WriteLine("{0} is greater", third);
+                //Console.WriteLine("{0} is greater", third)
+                return third;
             }
        }
 

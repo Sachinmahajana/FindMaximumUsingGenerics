@@ -13,16 +13,16 @@ namespace FindMaximumUsingGenerics
         {
             Console.WriteLine("Welcome to FindMaximumGenerics Program");
             Console.WriteLine("Enter the first Number: ");
-            int first = Convert.ToInt32(Console.ReadLine());
+            float first = (float)Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter the second Number: ");
-            int second = Convert.ToInt32(Console.ReadLine());
+            float second = (float)Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter the third Number: ");
-            int third = Convert.ToInt32(Console.ReadLine());
+            float third =(float) Convert.ToDouble(Console.ReadLine());
 
-            FindMaximum.FindMaxValue(first, second, third);
-           
+            double s1=  FindMaximum.FindDoubleMaxValue(first,second,third);
+            Console.WriteLine("Max value=" + s1);
             Console.ReadLine();
         }
-       
+        
     }
 }
